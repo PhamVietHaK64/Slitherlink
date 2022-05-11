@@ -87,16 +87,14 @@ class MyApp(QtWidgets.QMainWindow):
             qp.setPen(Qt.black)
             for i in range(m + 1):
                 for j in range(n + 1):
-                    if j == m:
-                        pen.setWidth(3)
-                        qp.setPen(pen)
-                        #qp.drawPoint(20 + (line//self.__size)*20, 20 + (line%self.__size)*20)
-                    else:
+                    #vẽ điểm
+                    pen.setWidth(3)
+                    qp.setPen(pen)
+                    qp.drawPoint(20 + i*20, 20 + j*20)
+                    if j != m:
                         line = i * n + j + 1
                         if sol[line - 1] > 0:
-                            pen.setWidth(3)
-                            qp.setPen(pen)
-                            qp.drawPoint(20 + (line//size)*20, 20 + (line%size)*20)
+                            #vẽ cạnh ngang
                             pen.setWidth(1)
                             qp.setPen(pen)
                             qp.drawLine(20 + (line//size)*20, 20 + (line%size)*20, 40 + (line//size)*20, 20 + (line%size)*20)
@@ -106,6 +104,7 @@ class MyApp(QtWidgets.QMainWindow):
                     for j in range(m + 1):
                         line = (m + 1) * n + j * m + i + 1
                         if sol[line - 1] > 0:
+                            #vẽ cạnh dọc
                             pen.setWidth(1)
                             qp.setPen(pen)
                             qp.drawLine(20 + (line//size)*20, 20 + (line%size)*20, 20 + (line//size)*20, 40 + (line%size)*20)
