@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1100</width>
-    <height>1100</height>
+    <width>1170</width>
+    <height>815</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>980</x>
-      <y>320</y>
+      <x>1050</x>
+      <y>240</y>
       <width>111</width>
       <height>203</height>
      </rect>
@@ -137,8 +137,8 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>959</width>
-      <height>800</height>
+      <width>1001</width>
+      <height>771</height>
      </rect>
     </property>
     <property name="sizePolicy">

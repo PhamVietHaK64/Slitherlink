@@ -59,8 +59,8 @@ class MyApp(QtWidgets.QMainWindow):
         self.__map = index
         size = len(self.__maps[self.__size][self.__map])
         self.__slitherlink_size = size
-        self.start_draw_x = (int) (959 - (distance * size)) / 2
-        self.start_draw_y = (int) (700 - (distance * size)) / 2
+        self.start_draw_x = int(959 - (distance * size)) / 2
+        self.start_draw_y = int(700 - (distance * size)) / 2
         self.map.setRowCount(size)
         self.map.setColumnCount(size)
         self.map.setGeometry(int(self.start_draw_x - 8), int(self.start_draw_y - 8), distance * (size + 1), distance * (size + 1))
