@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1170</width>
-    <height>815</height>
+    <width>1118</width>
+    <height>969</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,13 +20,27 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>1050</x>
-      <y>240</y>
-      <width>111</width>
-      <height>203</height>
+      <x>980</x>
+      <y>260</y>
+      <width>121</width>
+      <height>232</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="input_method">
+       <item>
+        <property name="text">
+         <string>not optimal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>optimal</string>
+        </property>
+       </item>
+      </widget>
+     </item>
      <item>
       <widget class="QComboBox" name="input_size">
        <item>
@@ -137,8 +151,8 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>1001</width>
-      <height>771</height>
+      <width>911</width>
+      <height>781</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -154,7 +168,9 @@
      <enum>Qt::DefaultContextMenu</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">QTableWidget{
+	border: none
+}</string>
     </property>
     <property name="lineWidth">
      <number>0</number>
@@ -178,38 +194,104 @@
      <bool>false</bool>
     </property>
     <property name="gridStyle">
-     <enum>Qt::NoPen</enum>
+     <enum>Qt::DotLine</enum>
     </property>
     <property name="cornerButtonEnabled">
      <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>30</number>
+    </property>
+    <property name="columnCount">
+     <number>30</number>
     </property>
     <attribute name="horizontalHeaderVisible">
      <bool>false</bool>
     </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>22</number>
+     <number>30</number>
     </attribute>
     <attribute name="horizontalHeaderHighlightSections">
      <bool>false</bool>
     </attribute>
     <attribute name="horizontalHeaderMinimumSectionSize">
-     <number>22</number>
+     <number>30</number>
     </attribute>
     <attribute name="verticalHeaderVisible">
      <bool>false</bool>
     </attribute>
     <attribute name="verticalHeaderDefaultSectionSize">
-     <number>22</number>
+     <number>30</number>
     </attribute>
     <attribute name="verticalHeaderHighlightSections">
      <bool>false</bool>
     </attribute>
     <attribute name="verticalHeaderMinimumSectionSize">
-     <number>22</number>
+     <number>30</number>
     </attribute>
     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
-     <bool>true</bool>
+     <bool>false</bool>
     </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
